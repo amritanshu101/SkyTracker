@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-poppins;
+}
+
+@layer components {
+    .setted-color {
+        @apply bg-mono4 text-gray-100;
+    }
+
+    .btn {
+        @apply cursor-pointer hover:bg-mono2 hover:text-black active:bg-mono3 active:text-black hover:shadow-sm hover:shadow-slate-500 transition;
+    }
+
+    .section {
+        @apply flex justify-between mb-2 p-2 rounded-2xl setted-color md:w-48;
+    }
+}
